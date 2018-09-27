@@ -33,6 +33,10 @@ impl EventHandler for Handler {
                     if let Err(why) = msg.channel_id.say(response) {
                         println!("Error sending message: {:?}", why);
                     }
+                } else {
+                    if let Err(why) = msg.channel_id.say("Well I never.") {
+                        println!("Error sending message: {:?}", why);
+                    }
                 }
             }
         }
