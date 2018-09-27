@@ -8,3 +8,14 @@ edition = "2018"
 serenity = "0.5.9"
 regex = "1"
 d20 = "0.1"
+fern = "0.5"
+log = "0.4"
+chrono = "0.4"
+
+[lib]
+name = "bots"
+path = "src/lib.rs"
+
+[[bin]]
+name = "wellington"
+path = "src/bin.rs"

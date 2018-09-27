@@ -27,15 +27,18 @@ impl EventHandler for Handler {
         println!("Got message {:?}", msg);
         let roll_re = Regex::new(r"^roll\s+(.+)$").expect("Regex doesn't compile");
 
-        for cap in roll_re.captures_iter(&msg.content) {
+        for cap in roll_re.captures_iter(&msg.content.to_lowercase()) {
             if let Some(roll) = cap.get(1).map(|m| m.as_str()) {
-                if let Ok(response) = Handler::role_response(roll) {
-                    if let Err(why) = msg.channel_id.say(response) {
-                        println!("Error sending message: {:?}", why);
+                match Handler::role_response(roll) {
+                    Ok(response) => {
+                        if let Err(why) = msg.channel_id.say(response) {
+                            println!("Error sending message: {:?}", why);
+                        }
                     }
-                } else {
-                    if let Err(why) = msg.channel_id.say("Well I never.") {
-                        println!("Error sending message: {:?}", why);
+                    Err(_) => {
+                        if let Err(why) = msg.channel_id.say("Well I never.") {
+                            println!("Error sending message: {:?}", why);
+                        }
                     }
                 }
             }

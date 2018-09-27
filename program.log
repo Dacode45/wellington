@@ -1,0 +1,653 @@
+[2018-09-27][18:45:42][hyper::header][TRACE] Headers.set( "User-Agent", UserAgent("DiscordBot (https://github.com/serenity-rs/serenity, 0.5.9)") )
+[2018-09-27][18:45:42][hyper::header][TRACE] Headers.set( "Authorization", Authorization("Bot NDk0OTExMzU3NTQwNjMwNTQ4.Do6Zvw.AUPEUquyULhLE5zoC6mzr8jliXc") )
+[2018-09-27][18:45:42][hyper::header][TRACE] Headers.set( "Content-Type", ContentType(Mime(Application, Json, [])) )
+[2018-09-27][18:45:42][hyper::client][TRACE] send method=Get, url="https://discordapp.com/api/v6/gateway", client=Client { redirect_policy: FollowAll, read_timeout: None, write_timeout: None, proxy: None }
+[2018-09-27][18:45:42][hyper::client][TRACE] host="discordapp.com"
+[2018-09-27][18:45:42][hyper::client][TRACE] port=443
+[2018-09-27][18:45:42][hyper::net][DEBUG] http scheme
+[2018-09-27][18:45:42][hyper::net][DEBUG] https scheme
+[2018-09-27][18:45:42][hyper::header][TRACE] Headers.set( "Host", Host { hostname: "discordapp.com", port: Some(443) } )
+[2018-09-27][18:45:42][hyper::http::h1][DEBUG] request line: Get "/api/v6/gateway" Http11
+[2018-09-27][18:45:42][hyper::http::h1][DEBUG] headers=Headers { Host: discordapp.com
+, User-Agent: DiscordBot (https://github.com/serenity-rs/serenity, 0.5.9)
+, Authorization: Bot NDk0OTExMzU3NTQwNjMwNTQ4.Do6Zvw.AUPEUquyULhLE5zoC6mzr8jliXc
+, Content-Type: application/json
+, }
+[2018-09-27][18:45:42][hyper::client::response][TRACE] Response::with_message
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] previous_response_expected_no_content = false
+[2018-09-27][18:45:42][hyper::buffer][TRACE] get_buf []
+[2018-09-27][18:45:42][hyper::buffer][TRACE] read_into_buf buf[0..4096]
+[2018-09-27][18:45:42][hyper::buffer][TRACE] get_buf [u8; 4096][0..658]
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] try_parse([72, 84, 84, 80, 47, 49, 46, 49, 32, 50, 48, 48, 32, 79, 75, 13, 10, 68, 97, 116, 101, 58, 32, 84, 104, 117, 44, 32, 50, 55, 32, 83, 101, 112, 32, 50, 48, 49, 56, 32, 50, 51, 58, 52, 53, 58, 52, 50, 32, 71, 77, 84, 13, 10, 67, 111, 110, 116, 101, 110, 116, 45, 84, 121, 112, 101, 58, 32, 97, 112, 112, 108, 105, 99, 97, 116, 105, 111, 110, 47, 106, 115, 111, 110, 13, 10, 67, 111, 110, 116, 101, 110, 116, 45, 76, 101, 110, 103, 116, 104, 58, 32, 51, 53, 13, 10, 67, 111, 110, 110, 101, 99, 116, 105, 111, 110, 58, 32, 107, 101, 101, 112, 45, 97, 108, 105, 118, 101, 13, 10, 83, 101, 116, 45, 67, 111, 111, 107, 105, 101, 58, 32, 95, 95, 99, 102, 100, 117, 105, 100, 61, 100, 102, 49, 54, 56, 52, 54, 57, 52, 54, 48, 49, 52, 57, 52, 100, 102, 97, 98, 56, 55, 49, 53, 51, 57, 54, 98, 49, 49, 100, 48, 55, 51, 49, 53, 51, 56, 48, 57, 49, 57, 52, 50, 59, 32, 101, 120, 112, 105, 114, 101, 115, 61, 70, 114, 105, 44, 32, 50, 55, 45, 83, 101, 112, 45, 49, 57, 32, 50, 51, 58, 52, 53, 58, 52, 50, 32, 71, 77, 84, 59, 32, 112, 97, 116, 104, 61, 47, 59, 32, 100, 111, 109, 97, 105, 110, 61, 46, 100, 105, 115, 99, 111, 114, 100, 97, 112, 112, 46, 99, 111, 109, 59, 32, 72, 116, 116, 112, 79, 110, 108, 121, 13, 10, 83, 116, 114, 105, 99, 116, 45, 84, 114, 97, 110, 115, 112, 111, 114, 116, 45, 83, 101, 99, 117, 114, 105, 116, 121, 58, 32, 109, 97, 120, 45, 97, 103, 101, 61, 51, 49, 53, 51, 54, 48, 48, 48, 59, 32, 105, 110, 99, 108, 117, 100, 101, 83, 117, 98, 68, 111, 109, 97, 105, 110, 115, 13, 10, 86, 105, 97, 58, 32, 49, 46, 49, 32, 103, 111, 111, 103, 108, 101, 13, 10, 65, 108, 116, 45, 83, 118, 99, 58, 32, 99, 108, 101, 97, 114, 13, 10, 67, 70, 45, 67, 97, 99, 104, 101, 45, 83, 116, 97, 116, 117, 115, 58, 32, 72, 73, 84, 13, 10, 69, 120, 112, 105, 114, 101, 115, 58, 32, 70, 114, 105, 44, 32, 50, 56, 32, 83, 101, 112, 32, 50, 48, 49, 56, 32, 48, 48, 58, 49, 53, 58, 52, 50, 32, 71, 77, 84, 13, 10, 67, 97, 99, 104, 101, 45, 67, 111, 110, 116, 114, 111, 108, 58, 32, 112, 117, 98, 108, 105, 99, 44, 32, 109, 97, 120, 45, 97, 103, 101, 61, 49, 56, 48, 48, 13, 10, 69, 120, 112, 101, 99, 116, 45, 67, 84, 58, 32, 109, 97, 120, 45, 97, 103, 101, 61, 54, 48, 52, 56, 48, 48, 44, 32, 114, 101, 112, 111, 114, 116, 45, 117, 114, 105, 61, 34, 104, 116, 116, 112, 115, 58, 47, 47, 114, 101, 112, 111, 114, 116, 45, 117, 114, 105, 46, 99, 108, 111, 117, 100, 102, 108, 97, 114, 101, 46, 99, 111, 109, 47, 99, 100, 110, 45, 99, 103, 105, 47, 98, 101, 97, 99, 111, 110, 47, 101, 120, 112, 101, 99, 116, 45, 99, 116, 34, 13, 10, 83, 101, 114, 118, 101, 114, 58, 32, 99, 108, 111, 117, 100, 102, 108, 97, 114, 101, 13, 10, 67, 70, 45, 82, 65, 89, 58, 32, 52, 54, 49, 49, 100, 56, 54, 101, 56, 56, 50, 49, 53, 57, 50, 100, 45, 68, 70, 87, 13, 10, 13, 10, 123, 34, 117, 114, 108, 34, 58, 32, 34, 119, 115, 115, 58, 47, 47, 103, 97, 116, 101, 119, 97, 121, 46, 100, 105, 115, 99, 111, 114, 100, 46, 103, 103, 34, 125])
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Response.try_parse([Header; 100], [u8; 658])
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Response.try_parse Complete(623)
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "Date"=[84, 104, 117, 44, 32, 50, 55, 32, 83, 101, 112, 32, 50, 48, 49, 56, 32, 50, 51, 58, 52, 53, 58, 52, 50, 32, 71, 77, 84]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "Content-Type"=[97, 112, 112, 108, 105, 99, 97, 116, 105, 111, 110, 47, 106, 115, 111, 110]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "Content-Length"=[51, 53]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "Connection"=[107, 101, 101, 112, 45, 97, 108, 105, 118, 101]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "Set-Cookie"=[95, 95, 99, 102, 100, 117, 105, 100, 61, 100, 102, 49, 54, 56, 52, 54, 57, 52, 54, 48, 49, 52, 57, 52, 100, 102, 97, 98, 56, 55, 49, 53, 51, 57, 54, 98, 49, 49, 100, 48, 55, 51, 49, 53, 51, 56, 48, 57, 49, 57, 52, 50, 59, 32, 101, 120, 112, 105, 114, 101, 115, 61, 70, 114, 105, 44, 32, 50, 55, 45, 83, 101, 112, 45, 49, 57, 32, 50, 51, 58, 52, 53, 58, 52, 50, 32, 71, 77, 84, 59, 32, 112, 97, 116, 104, 61, 47, 59, 32, 100, 111, 109, 97, 105, 110, 61, 46, 100, 105, 115, 99, 111, 114, 100, 97, 112, 112, 46, 99, 111, 109, 59, 32, 72, 116, 116, 112, 79, 110, 108, 121]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "Strict-Transport-Security"=[109, 97, 120, 45, 97, 103, 101, 61, 51, 49, 53, 51, 54, 48, 48, 48, 59, 32, 105, 110, 99, 108, 117, 100, 101, 83, 117, 98, 68, 111, 109, 97, 105, 110, 115]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "Via"=[49, 46, 49, 32, 103, 111, 111, 103, 108, 101]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "Alt-Svc"=[99, 108, 101, 97, 114]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "CF-Cache-Status"=[72, 73, 84]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "Expires"=[70, 114, 105, 44, 32, 50, 56, 32, 83, 101, 112, 32, 50, 48, 49, 56, 32, 48, 48, 58, 49, 53, 58, 52, 50, 32, 71, 77, 84]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "Cache-Control"=[112, 117, 98, 108, 105, 99, 44, 32, 109, 97, 120, 45, 97, 103, 101, 61, 49, 56, 48, 48]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "Expect-CT"=[109, 97, 120, 45, 97, 103, 101, 61, 54, 48, 52, 56, 48, 48, 44, 32, 114, 101, 112, 111, 114, 116, 45, 117, 114, 105, 61, 34, 104, 116, 116, 112, 115, 58, 47, 47, 114, 101, 112, 111, 114, 116, 45, 117, 114, 105, 46, 99, 108, 111, 117, 100, 102, 108, 97, 114, 101, 46, 99, 111, 109, 47, 99, 100, 110, 45, 99, 103, 105, 47, 98, 101, 97, 99, 111, 110, 47, 101, 120, 112, 101, 99, 116, 45, 99, 116, 34]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "Server"=[99, 108, 111, 117, 100, 102, 108, 97, 114, 101]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "CF-RAY"=[52, 54, 49, 49, 100, 56, 54, 101, 56, 56, 50, 49, 53, 57, 50, 100, 45, 68, 70, 87]
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] should_have_response_body(Get, 200)
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Http11Message.reader = SizedReader(remaining=35)
+[2018-09-27][18:45:42][hyper::client::response][DEBUG] version=Http11, status=Ok
+[2018-09-27][18:45:42][hyper::client::response][DEBUG] headers=Headers { Date: Thu, 27 Sep 2018 23:45:42 GMT
+, Content-Type: application/json
+, Content-Length: 35
+, Connection: keep-alive
+, Set-Cookie: __cfduid=df1684694601494dfab8715396b11d0731538091942; expires=Fri, 27-Sep-19 23:45:42 GMT; path=/; domain=.discordapp.com; HttpOnly
+, Strict-Transport-Security: max-age=31536000; includeSubDomains
+, Via: 1.1 google
+, Alt-Svc: clear
+, CF-Cache-Status: HIT
+, Expires: Fri, 28 Sep 2018 00:15:42 GMT
+, Cache-Control: public, max-age=1800
+, Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+, Server: cloudflare
+, CF-RAY: 4611d86e8821592d-DFW
+, }
+[2018-09-27][18:45:42][serenity::http::ratelimiting][DEBUG] [ratelimiting] Set the ratelimit offset to 0
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=35
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=34
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=33
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=32
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=31
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=30
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=29
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=28
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=27
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=26
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=25
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=24
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=23
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=22
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=21
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=20
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=19
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=18
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=17
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=16
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=15
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=14
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=13
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=12
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=11
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=10
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=9
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=8
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=7
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=6
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=5
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=4
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=3
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=2
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read: 1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Sized read, remaining=0
+[2018-09-27][18:45:42][hyper::client::response][TRACE] Response.drop is_drained=true
+[2018-09-27][18:45:42][hyper::http][TRACE] should_keep_alive( Http11, Some(Connection([KeepAlive])) )
+[2018-09-27][18:45:42][wellington][INFO] Listening!
+[2018-09-27][18:45:42][hyper::header][TRACE] Headers.set( "User-Agent", UserAgent("DiscordBot (https://github.com/serenity-rs/serenity, 0.5.9)") )
+[2018-09-27][18:45:42][hyper::header][TRACE] Headers.set( "Authorization", Authorization("Bot NDk0OTExMzU3NTQwNjMwNTQ4.Do6Zvw.AUPEUquyULhLE5zoC6mzr8jliXc") )
+[2018-09-27][18:45:42][hyper::header][TRACE] Headers.set( "Content-Type", ContentType(Mime(Application, Json, [])) )
+[2018-09-27][18:45:42][hyper::client][TRACE] send method=Get, url="https://discordapp.com/api/v6/users/@me", client=Client { redirect_policy: FollowAll, read_timeout: None, write_timeout: None, proxy: None }
+[2018-09-27][18:45:42][hyper::client][TRACE] host="discordapp.com"
+[2018-09-27][18:45:42][hyper::client][TRACE] port=443
+[2018-09-27][18:45:42][hyper::net][DEBUG] http scheme
+[2018-09-27][18:45:42][hyper::net][DEBUG] https scheme
+[2018-09-27][18:45:42][hyper::header][TRACE] Headers.set( "Host", Host { hostname: "discordapp.com", port: Some(443) } )
+[2018-09-27][18:45:42][hyper::http::h1][DEBUG] request line: Get "/api/v6/users/@me" Http11
+[2018-09-27][18:45:42][hyper::http::h1][DEBUG] headers=Headers { Host: discordapp.com
+, User-Agent: DiscordBot (https://github.com/serenity-rs/serenity, 0.5.9)
+, Authorization: Bot NDk0OTExMzU3NTQwNjMwNTQ4.Do6Zvw.AUPEUquyULhLE5zoC6mzr8jliXc
+, Content-Type: application/json
+, }
+[2018-09-27][18:45:42][hyper::client::response][TRACE] Response::with_message
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] previous_response_expected_no_content = false
+[2018-09-27][18:45:42][hyper::buffer][TRACE] get_buf []
+[2018-09-27][18:45:42][hyper::buffer][TRACE] read_into_buf buf[0..4096]
+[2018-09-27][18:45:42][hyper::buffer][TRACE] get_buf [u8; 4096][0..767]
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] try_parse([72, 84, 84, 80, 47, 49, 46, 49, 32, 50, 48, 48, 32, 79, 75, 13, 10, 68, 97, 116, 101, 58, 32, 84, 104, 117, 44, 32, 50, 55, 32, 83, 101, 112, 32, 50, 48, 49, 56, 32, 50, 51, 58, 52, 53, 58, 52, 50, 32, 71, 77, 84, 13, 10, 67, 111, 110, 116, 101, 110, 116, 45, 84, 121, 112, 101, 58, 32, 97, 112, 112, 108, 105, 99, 97, 116, 105, 111, 110, 47, 106, 115, 111, 110, 13, 10, 84, 114, 97, 110, 115, 102, 101, 114, 45, 69, 110, 99, 111, 100, 105, 110, 103, 58, 32, 99, 104, 117, 110, 107, 101, 100, 13, 10, 67, 111, 110, 110, 101, 99, 116, 105, 111, 110, 58, 32, 107, 101, 101, 112, 45, 97, 108, 105, 118, 101, 13, 10, 83, 101, 116, 45, 67, 111, 111, 107, 105, 101, 58, 32, 95, 95, 99, 102, 100, 117, 105, 100, 61, 100, 101, 48, 101, 100, 98, 57, 56, 97, 102, 98, 100, 97, 102, 57, 53, 57, 57, 56, 53, 56, 50, 101, 54, 56, 102, 101, 99, 100, 99, 101, 102, 102, 49, 53, 51, 56, 48, 57, 49, 57, 52, 50, 59, 32, 101, 120, 112, 105, 114, 101, 115, 61, 70, 114, 105, 44, 32, 50, 55, 45, 83, 101, 112, 45, 49, 57, 32, 50, 51, 58, 52, 53, 58, 52, 50, 32, 71, 77, 84, 59, 32, 112, 97, 116, 104, 61, 47, 59, 32, 100, 111, 109, 97, 105, 110, 61, 46, 100, 105, 115, 99, 111, 114, 100, 97, 112, 112, 46, 99, 111, 109, 59, 32, 72, 116, 116, 112, 79, 110, 108, 121, 13, 10, 83, 116, 114, 105, 99, 116, 45, 84, 114, 97, 110, 115, 112, 111, 114, 116, 45, 83, 101, 99, 117, 114, 105, 116, 121, 58, 32, 109, 97, 120, 45, 97, 103, 101, 61, 51, 49, 53, 51, 54, 48, 48, 48, 59, 32, 105, 110, 99, 108, 117, 100, 101, 83, 117, 98, 68, 111, 109, 97, 105, 110, 115, 13, 10, 86, 105, 97, 58, 32, 49, 46, 49, 32, 103, 111, 111, 103, 108, 101, 13, 10, 65, 108, 116, 45, 83, 118, 99, 58, 32, 99, 108, 101, 97, 114, 13, 10, 69, 120, 112, 101, 99, 116, 45, 67, 84, 58, 32, 109, 97, 120, 45, 97, 103, 101, 61, 54, 48, 52, 56, 48, 48, 44, 32, 114, 101, 112, 111, 114, 116, 45, 117, 114, 105, 61, 34, 104, 116, 116, 112, 115, 58, 47, 47, 114, 101, 112, 111, 114, 116, 45, 117, 114, 105, 46, 99, 108, 111, 117, 100, 102, 108, 97, 114, 101, 46, 99, 111, 109, 47, 99, 100, 110, 45, 99, 103, 105, 47, 98, 101, 97, 99, 111, 110, 47, 101, 120, 112, 101, 99, 116, 45, 99, 116, 34, 13, 10, 83, 101, 114, 118, 101, 114, 58, 32, 99, 108, 111, 117, 100, 102, 108, 97, 114, 101, 13, 10, 67, 70, 45, 82, 65, 89, 58, 32, 52, 54, 49, 49, 100, 56, 54, 102, 54, 57, 97, 54, 53, 57, 51, 51, 45, 68, 70, 87, 13, 10, 13, 10, 101, 53, 13, 10, 123, 34, 117, 115, 101, 114, 110, 97, 109, 101, 34, 58, 32, 34, 87, 101, 108, 108, 105, 110, 103, 116, 111, 110, 45, 84, 101, 115, 116, 34, 44, 32, 34, 118, 101, 114, 105, 102, 105, 101, 100, 34, 58, 32, 116, 114, 117, 101, 44, 32, 34, 108, 111, 99, 97, 108, 101, 34, 58, 32, 34, 101, 110, 45, 85, 83, 34, 44, 32, 34, 109, 102, 97, 95, 101, 110, 97, 98, 108, 101, 100, 34, 58, 32, 102, 97, 108, 115, 101, 44, 32, 34, 98, 111, 116, 34, 58, 32, 116, 114, 117, 101, 44, 32, 34, 105, 100, 34, 58, 32, 34, 52, 57, 52, 57, 49, 49, 51, 53, 55, 53, 52, 48, 54, 51, 48, 53, 52, 56, 34, 44, 32, 34, 102, 108, 97, 103, 115, 34, 58, 32, 48, 44, 32, 34, 97, 118, 97, 116, 97, 114, 34, 58, 32, 34, 57, 50, 53, 56, 48, 57, 57, 57, 49, 50, 48, 48, 99, 97, 48, 101, 57, 56, 100, 97, 54, 55, 49, 54, 98, 56, 98, 100, 53, 99, 99, 55, 34, 44, 32, 34, 100, 105, 115, 99, 114, 105, 109, 105, 110, 97, 116, 111, 114, 34, 58, 32, 34, 53, 56, 52, 48, 34, 44, 32, 34, 101, 109, 97, 105, 108, 34, 58, 32, 110, 117, 108, 108, 125, 13, 10])
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Response.try_parse([Header; 100], [u8; 767])
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Response.try_parse Complete(532)
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "Date"=[84, 104, 117, 44, 32, 50, 55, 32, 83, 101, 112, 32, 50, 48, 49, 56, 32, 50, 51, 58, 52, 53, 58, 52, 50, 32, 71, 77, 84]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "Content-Type"=[97, 112, 112, 108, 105, 99, 97, 116, 105, 111, 110, 47, 106, 115, 111, 110]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "Transfer-Encoding"=[99, 104, 117, 110, 107, 101, 100]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "Connection"=[107, 101, 101, 112, 45, 97, 108, 105, 118, 101]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "Set-Cookie"=[95, 95, 99, 102, 100, 117, 105, 100, 61, 100, 101, 48, 101, 100, 98, 57, 56, 97, 102, 98, 100, 97, 102, 57, 53, 57, 57, 56, 53, 56, 50, 101, 54, 56, 102, 101, 99, 100, 99, 101, 102, 102, 49, 53, 51, 56, 48, 57, 49, 57, 52, 50, 59, 32, 101, 120, 112, 105, 114, 101, 115, 61, 70, 114, 105, 44, 32, 50, 55, 45, 83, 101, 112, 45, 49, 57, 32, 50, 51, 58, 52, 53, 58, 52, 50, 32, 71, 77, 84, 59, 32, 112, 97, 116, 104, 61, 47, 59, 32, 100, 111, 109, 97, 105, 110, 61, 46, 100, 105, 115, 99, 111, 114, 100, 97, 112, 112, 46, 99, 111, 109, 59, 32, 72, 116, 116, 112, 79, 110, 108, 121]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "Strict-Transport-Security"=[109, 97, 120, 45, 97, 103, 101, 61, 51, 49, 53, 51, 54, 48, 48, 48, 59, 32, 105, 110, 99, 108, 117, 100, 101, 83, 117, 98, 68, 111, 109, 97, 105, 110, 115]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "Via"=[49, 46, 49, 32, 103, 111, 111, 103, 108, 101]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "Alt-Svc"=[99, 108, 101, 97, 114]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "Expect-CT"=[109, 97, 120, 45, 97, 103, 101, 61, 54, 48, 52, 56, 48, 48, 44, 32, 114, 101, 112, 111, 114, 116, 45, 117, 114, 105, 61, 34, 104, 116, 116, 112, 115, 58, 47, 47, 114, 101, 112, 111, 114, 116, 45, 117, 114, 105, 46, 99, 108, 111, 117, 100, 102, 108, 97, 114, 101, 46, 99, 111, 109, 47, 99, 100, 110, 45, 99, 103, 105, 47, 98, 101, 97, 99, 111, 110, 47, 101, 120, 112, 101, 99, 116, 45, 99, 116, 34]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "Server"=[99, 108, 111, 117, 100, 102, 108, 97, 114, 101]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "CF-RAY"=[52, 54, 49, 49, 100, 56, 54, 102, 54, 57, 97, 54, 53, 57, 51, 51, 45, 68, 70, 87]
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] should_have_response_body(Get, 200)
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Http11Message.reader = ChunkedReader(chunk_remaining=unknown)
+[2018-09-27][18:45:42][hyper::client::response][DEBUG] version=Http11, status=Ok
+[2018-09-27][18:45:42][hyper::client::response][DEBUG] headers=Headers { Date: Thu, 27 Sep 2018 23:45:42 GMT
+, Content-Type: application/json
+, Transfer-Encoding: chunked
+, Connection: keep-alive
+, Set-Cookie: __cfduid=de0edb98afbdaf95998582e68fecdceff1538091942; expires=Fri, 27-Sep-19 23:45:42 GMT; path=/; domain=.discordapp.com; HttpOnly
+, Strict-Transport-Security: max-age=31536000; includeSubDomains
+, Via: 1.1 google
+, Alt-Svc: clear
+, Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+, Server: cloudflare
+, CF-RAY: 4611d86f69a65933-DFW
+, }
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] chunk size=229
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=229
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=228
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=227
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=226
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=225
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=224
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=223
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=222
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=221
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=220
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=219
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=218
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=217
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=216
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=215
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=214
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=213
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=212
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=211
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=210
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=209
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=208
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=207
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=206
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=205
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=204
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=203
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=202
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=201
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=200
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=199
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=198
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=197
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=196
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=195
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=194
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=193
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=192
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=191
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=190
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=189
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=188
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=187
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=186
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=185
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=184
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=183
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=182
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=181
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=180
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=179
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=178
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=177
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=176
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=175
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=174
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=173
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=172
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=171
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=170
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=169
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=168
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=167
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=166
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=165
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=164
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=163
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=162
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=161
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=160
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=159
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=158
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=157
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=156
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=155
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=154
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=153
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=152
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=151
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=150
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=149
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=148
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=147
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=146
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=145
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=144
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=143
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=142
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=141
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=140
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=139
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=138
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=137
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=136
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=135
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=134
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=133
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=132
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=131
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=130
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=129
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=128
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=127
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=126
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=125
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=124
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=123
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=122
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=121
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=120
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=119
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=118
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=117
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=116
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=115
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=114
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=113
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=112
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=111
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=110
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=109
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=108
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=107
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=106
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=105
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=104
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=103
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=102
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=101
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=100
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=99
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=98
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=97
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=96
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=95
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=94
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=93
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=92
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=91
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=90
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=89
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=88
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=87
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=86
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=85
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=84
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=83
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=82
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=81
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=80
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=79
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=78
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=77
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=76
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=75
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=74
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=73
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=72
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=71
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=70
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=69
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=68
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=67
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=66
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=65
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=64
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=63
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=62
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=61
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=60
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=59
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=58
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=57
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=56
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=55
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=54
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=53
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=52
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=51
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=50
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=49
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=48
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=47
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=46
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=45
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=44
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=43
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=42
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=41
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=40
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=39
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=38
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=37
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=36
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=35
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=34
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=33
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=32
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=31
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=30
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=29
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=28
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=27
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=26
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=25
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=24
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=23
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=22
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=21
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=20
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=19
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=18
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=17
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=16
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=15
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=14
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=13
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=12
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=11
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=10
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=9
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=8
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=7
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=6
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=5
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=4
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=3
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=2
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=1
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] chunk size=0
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Chunked read, remaining=0
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] end of chunked
+[2018-09-27][18:45:42][hyper::client::response][TRACE] Response.drop is_drained=true
+[2018-09-27][18:45:42][hyper::http][TRACE] should_keep_alive( Http11, Some(Connection([KeepAlive])) )
+[2018-09-27][18:45:42][serenity::client][DEBUG] Initializing shard info: 0 - 1/1
+[2018-09-27][18:45:42][serenity::client::bridge::gateway::shard_manager][INFO] Telling shard queuer to start shard 0
+[2018-09-27][18:45:42][serenity::client::bridge::gateway::shard_manager_monitor][DEBUG] Starting shard manager worker
+[2018-09-27][18:45:42][hyper::header][TRACE] Headers.set( "Host", Host { hostname: "gateway.discord.gg", port: None } )
+[2018-09-27][18:45:42][hyper::header][TRACE] Headers.set( "Connection", Connection([ConnectionHeader(UniCase("Upgrade"))]) )
+[2018-09-27][18:45:42][hyper::header][TRACE] Headers.set( "Upgrade", Upgrade([Protocol { name: WebSocket, version: None }]) )
+[2018-09-27][18:45:42][hyper::header][TRACE] Headers.set( "Sec-WebSocket-Version", 13 )
+[2018-09-27][18:45:42][hyper::header][TRACE] Headers.set( "Sec-WebSocket-Key", WebSocketKey(3Ba91urvtw7NHROLbrI87g==) )
+[2018-09-27][18:45:42][hyper::buffer][TRACE] get_buf []
+[2018-09-27][18:45:42][hyper::buffer][TRACE] read_into_buf buf[0..4096]
+[2018-09-27][18:45:42][hyper::buffer][TRACE] get_buf [u8; 4096][0..457]
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] try_parse([72, 84, 84, 80, 47, 49, 46, 49, 32, 49, 48, 49, 32, 83, 119, 105, 116, 99, 104, 105, 110, 103, 32, 80, 114, 111, 116, 111, 99, 111, 108, 115, 13, 10, 68, 97, 116, 101, 58, 32, 84, 104, 117, 44, 32, 50, 55, 32, 83, 101, 112, 32, 50, 48, 49, 56, 32, 50, 51, 58, 52, 53, 58, 52, 50, 32, 71, 77, 84, 13, 10, 67, 111, 110, 110, 101, 99, 116, 105, 111, 110, 58, 32, 117, 112, 103, 114, 97, 100, 101, 13, 10, 83, 101, 116, 45, 67, 111, 111, 107, 105, 101, 58, 32, 95, 95, 99, 102, 100, 117, 105, 100, 61, 100, 50, 56, 51, 48, 54, 57, 97, 102, 99, 57, 99, 102, 52, 55, 52, 99, 49, 98, 53, 102, 51, 55, 51, 57, 51, 99, 56, 51, 51, 97, 98, 98, 49, 53, 51, 56, 48, 57, 49, 57, 52, 50, 59, 32, 101, 120, 112, 105, 114, 101, 115, 61, 70, 114, 105, 44, 32, 50, 55, 45, 83, 101, 112, 45, 49, 57, 32, 50, 51, 58, 52, 53, 58, 52, 50, 32, 71, 77, 84, 59, 32, 112, 97, 116, 104, 61, 47, 59, 32, 100, 111, 109, 97, 105, 110, 61, 46, 100, 105, 115, 99, 111, 114, 100, 46, 103, 103, 59, 32, 72, 116, 116, 112, 79, 110, 108, 121, 13, 10, 115, 101, 99, 45, 119, 101, 98, 115, 111, 99, 107, 101, 116, 45, 97, 99, 99, 101, 112, 116, 58, 32, 109, 117, 117, 69, 57, 74, 110, 53, 76, 43, 84, 47, 100, 69, 122, 80, 68, 87, 83, 83, 86, 110, 72, 77, 112, 105, 115, 61, 13, 10, 117, 112, 103, 114, 97, 100, 101, 58, 32, 119, 101, 98, 115, 111, 99, 107, 101, 116, 13, 10, 69, 120, 112, 101, 99, 116, 45, 67, 84, 58, 32, 109, 97, 120, 45, 97, 103, 101, 61, 54, 48, 52, 56, 48, 48, 44, 32, 114, 101, 112, 111, 114, 116, 45, 117, 114, 105, 61, 34, 104, 116, 116, 112, 115, 58, 47, 47, 114, 101, 112, 111, 114, 116, 45, 117, 114, 105, 46, 99, 108, 111, 117, 100, 102, 108, 97, 114, 101, 46, 99, 111, 109, 47, 99, 100, 110, 45, 99, 103, 105, 47, 98, 101, 97, 99, 111, 110, 47, 101, 120, 112, 101, 99, 116, 45, 99, 116, 34, 13, 10, 83, 101, 114, 118, 101, 114, 58, 32, 99, 108, 111, 117, 100, 102, 108, 97, 114, 101, 13, 10, 67, 70, 45, 82, 65, 89, 58, 32, 52, 54, 49, 49, 100, 56, 55, 48, 101, 97, 51, 100, 53, 56, 99, 49, 45, 68, 70, 87, 13, 10, 13, 10])
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Response.try_parse([Header; 100], [u8; 457])
+[2018-09-27][18:45:42][hyper::http::h1][TRACE] Response.try_parse Complete(457)
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "Date"=[84, 104, 117, 44, 32, 50, 55, 32, 83, 101, 112, 32, 50, 48, 49, 56, 32, 50, 51, 58, 52, 53, 58, 52, 50, 32, 71, 77, 84]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "Connection"=[117, 112, 103, 114, 97, 100, 101]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "Set-Cookie"=[95, 95, 99, 102, 100, 117, 105, 100, 61, 100, 50, 56, 51, 48, 54, 57, 97, 102, 99, 57, 99, 102, 52, 55, 52, 99, 49, 98, 53, 102, 51, 55, 51, 57, 51, 99, 56, 51, 51, 97, 98, 98, 49, 53, 51, 56, 48, 57, 49, 57, 52, 50, 59, 32, 101, 120, 112, 105, 114, 101, 115, 61, 70, 114, 105, 44, 32, 50, 55, 45, 83, 101, 112, 45, 49, 57, 32, 50, 51, 58, 52, 53, 58, 52, 50, 32, 71, 77, 84, 59, 32, 112, 97, 116, 104, 61, 47, 59, 32, 100, 111, 109, 97, 105, 110, 61, 46, 100, 105, 115, 99, 111, 114, 100, 46, 103, 103, 59, 32, 72, 116, 116, 112, 79, 110, 108, 121]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "sec-websocket-accept"=[109, 117, 117, 69, 57, 74, 110, 53, 76, 43, 84, 47, 100, 69, 122, 80, 68, 87, 83, 83, 86, 110, 72, 77, 112, 105, 115, 61]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "upgrade"=[119, 101, 98, 115, 111, 99, 107, 101, 116]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "Expect-CT"=[109, 97, 120, 45, 97, 103, 101, 61, 54, 48, 52, 56, 48, 48, 44, 32, 114, 101, 112, 111, 114, 116, 45, 117, 114, 105, 61, 34, 104, 116, 116, 112, 115, 58, 47, 47, 114, 101, 112, 111, 114, 116, 45, 117, 114, 105, 46, 99, 108, 111, 117, 100, 102, 108, 97, 114, 101, 46, 99, 111, 109, 47, 99, 100, 110, 45, 99, 103, 105, 47, 98, 101, 97, 99, 111, 110, 47, 101, 120, 112, 101, 99, 116, 45, 99, 116, 34]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "Server"=[99, 108, 111, 117, 100, 102, 108, 97, 114, 101]
+[2018-09-27][18:45:42][hyper::header][TRACE] raw header: "CF-RAY"=[52, 54, 49, 49, 100, 56, 55, 48, 101, 97, 51, 100, 53, 56, 99, 49, 45, 68, 70, 87]
+[2018-09-27][18:45:42][evzht9h3nznqzwl::client::sync][TRACE] Creating client with UUID: 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:42][serenity::client::bridge::gateway::shard_runner][DEBUG] [ShardRunner [0, 1]] Running
+[2018-09-27][18:45:42][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:42][evzht9h3nznqzwl::dataframe][TRACE] WSData: Some(DataFrameHeader { flags: FIN, opcode: 1, mask: None, len: 95 }) - {"t":null,"s":null,"op":10,"d":{"heartbeat_interval":41250,"_trace":["gateway-prd-main-65f5"]}}
+[2018-09-27][18:45:42][serenity::gateway::shard][DEBUG] [Shard [0, 1]] Received a Hello; interval: 41250
+[2018-09-27][18:45:42][serenity::gateway::ws_client_ext][DEBUG] [Shard [0, 1]] Identifying
+[2018-09-27][18:45:42][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:42][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:42][evzht9h3nznqzwl::dataframe][TRACE] WSData: Some(DataFrameHeader { flags: FIN, opcode: 1, mask: None, len: 487 }) - {"t":"READY","s":1,"op":0,"d":{"v":6,"user_settings":{},"user":{"verified":true,"username":"Wellington-Test","mfa_enabled":false,"id":"494911357540630548","email":null,"discriminator":"5840","bot":true,"avatar":"925809991200ca0e98da6716b8bd5cc7"},"shard":[0,1],"session_id":"275a94b8d846a401c7b7229758da6895","relationships":[],"private_channels":[],"presences":[],"guilds":[{"unavailable":true,"id":"494671450985201665"}],"_trace":["gateway-prd-main-65f5","discord-sessions-prd-1-18"]}}
+[2018-09-27][18:45:42][serenity::gateway::shard][DEBUG] [Shard [0, 1]] Received Ready
+[2018-09-27][18:45:42][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:42][evzht9h3nznqzwl::dataframe][TRACE] WSData: Some(DataFrameHeader { flags: FIN, opcode: 1, mask: None, len: 2388 }) - {"t":"GUILD_CREATE","s":2,"op":0,"d":{"voice_states":[],"verification_level":0,"unavailable":false,"system_channel_id":"494671450985201667","splash":null,"roles":[{"position":0,"permissions":104324161,"name":"@everyone","mentionable":false,"managed":false,"id":"494671450985201665","hoist":false,"color":0},{"position":1,"permissions":262216,"name":"Wellington","mentionable":false,"managed":true,"id":"494673123476766731","hoist":false,"color":0}],"region":"us-south","presences":[{"user":{"id":"379009372275212290"},"status":"online","game":null,"activities":[]},{"user":{"id":"494653554515116043"},"status":"online","game":null,"activities":[]},{"user":{"id":"494911357540630548"},"status":"online","game":null,"activities":[]}],"owner_id":"379009372275212290","name":"bots-only","mfa_level":0,"members":[{"user":{"username":"JohnGalt","id":"379009372275212290","discriminator":"0549","avatar":null},"roles":[],"mute":false,"joined_at":"2018-09-27T00:47:44.531000+00:00","deaf":false},{"user":{"username":"Wellington","id":"494653554515116043","discriminator":"1395","bot":true,"avatar":"925809991200ca0e98da6716b8bd5cc7"},"roles":["494673123476766731"],"mute":false,"joined_at":"2018-09-27T00:54:23.307000+00:00","deaf":false},{"user":{"username":"Wellington-Test","id":"494911357540630548","discriminator":"5840","bot":true,"avatar":"925809991200ca0e98da6716b8bd5cc7"},"roles":[],"nick":null,"mute":false,"joined_at":"2018-09-27T16:47:55.145871+00:00","deaf":false}],"member_count":3,"lazy":true,"large":false,"joined_at":"2018-09-27T16:47:55.145871+00:00","id":"494671450985201665","icon":null,"features":[],"explicit_content_filter":0,"emojis":[],"default_message_notifications":0,"channels":[{"user_limit":0,"type":4,"position":0,"permission_overwrites":[],"name":"Text Channels","id":"494671450985201666","bitrate":64000},{"type":0,"topic":null,"rate_limit_per_user":0,"position":0,"permission_overwrites":[],"parent_id":"494671450985201666","name":"general","last_message_id":"494917154416623628","id":"494671450985201667"},{"user_limit":0,"type":4,"position":0,"permission_overwrites":[],"name":"Voice Channels","id":"494671450985201668","bitrate":64000},{"user_limit":0,"type":2,"position":0,"permission_overwrites":[],"parent_id":"494671450985201668","name":"General","id":"494671450985201669","bitrate":64000}],"application_id":null,"afk_timeout":300,"afk_channel_id":null}}
+[2018-09-27][18:45:42][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:42][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:43][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:43][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:43][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:43][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:43][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:43][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:43][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:43][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:43][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:43][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:44][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:44][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:44][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:44][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:44][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:44][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:44][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:44][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:44][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:44][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:45][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:45][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:45][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:45][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:45][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:45][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:45][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:45][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:45][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:45][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:46][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:46][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:46][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:46][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:46][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:46][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:46][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:46][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:46][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:46][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:47][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:47][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:47][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:47][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:47][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:47][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:47][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:47][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:47][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:48][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:48][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:48][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:48][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:48][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:48][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:48][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:48][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:48][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:48][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:49][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:49][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:49][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:49][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:49][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:45:49][evzht9h3nznqzwl::dataframe][TRACE] Reading data for 5203dab9-2a5b-420c-9064-143a2e6d7a48
+[2018-09-27][18:46:01][hyper::net][DEBUG] http scheme
+[2018-09-27][18:46:01][hyper::net][DEBUG] https scheme
+[2018-09-27][18:46:01][hyper::http::h1][DEBUG] request line: Get "/api/v6/gateway" Http11
+[2018-09-27][18:46:01][hyper::http::h1][DEBUG] headers=Headers { Host: discordapp.com
+, User-Agent: DiscordBot (https://github.com/serenity-rs/serenity, 0.5.9)
+, Authorization: Bot NDk0OTExMzU3NTQwNjMwNTQ4.Do6Zvw.AUPEUquyULhLE5zoC6mzr8jliXc
+, Content-Type: application/json
+, }
+[2018-09-27][18:46:01][hyper::client::response][DEBUG] version=Http11, status=Ok
+[2018-09-27][18:46:01][hyper::client::response][DEBUG] headers=Headers { Date: Thu, 27 Sep 2018 23:46:01 GMT
+, Content-Type: application/json
+, Content-Length: 35
+, Connection: keep-alive
+, Set-Cookie: __cfduid=dbc44908d674840fb73edd941fe5b16de1538091961; expires=Fri, 27-Sep-19 23:46:01 GMT; path=/; domain=.discordapp.com; HttpOnly
+, Strict-Transport-Security: max-age=31536000; includeSubDomains
+, Via: 1.1 google
+, Alt-Svc: clear
+, CF-Cache-Status: HIT
+, Expires: Fri, 28 Sep 2018 00:16:01 GMT
+, Cache-Control: public, max-age=1800
+, Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+, Server: cloudflare
+, CF-RAY: 4611d8e7d9491fc4-DFW
+, }
+[2018-09-27][18:46:01][serenity::http::ratelimiting][DEBUG] [ratelimiting] Set the ratelimit offset to 0
+[2018-09-27][18:46:01][wellington][INFO] Listening!
+[2018-09-27][18:46:01][hyper::net][DEBUG] http scheme
+[2018-09-27][18:46:01][hyper::net][DEBUG] https scheme
+[2018-09-27][18:46:01][hyper::http::h1][DEBUG] request line: Get "/api/v6/users/@me" Http11
+[2018-09-27][18:46:01][hyper::http::h1][DEBUG] headers=Headers { Host: discordapp.com
+, User-Agent: DiscordBot (https://github.com/serenity-rs/serenity, 0.5.9)
+, Authorization: Bot NDk0OTExMzU3NTQwNjMwNTQ4.Do6Zvw.AUPEUquyULhLE5zoC6mzr8jliXc
+, Content-Type: application/json
+, }
+[2018-09-27][18:46:01][hyper::client::response][DEBUG] version=Http11, status=Ok
+[2018-09-27][18:46:01][hyper::client::response][DEBUG] headers=Headers { Date: Thu, 27 Sep 2018 23:46:01 GMT
+, Content-Type: application/json
+, Transfer-Encoding: chunked
+, Connection: keep-alive
+, Set-Cookie: __cfduid=d533a45c277b26da44deb0ae3100893871538091961; expires=Fri, 27-Sep-19 23:46:01 GMT; path=/; domain=.discordapp.com; HttpOnly
+, Strict-Transport-Security: max-age=31536000; includeSubDomains
+, Via: 1.1 google
+, Alt-Svc: clear
+, Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+, Server: cloudflare
+, CF-RAY: 4611d8e8ad811f9a-DFW
+, }
+[2018-09-27][18:46:01][serenity::client][DEBUG] Initializing shard info: 0 - 1/1
+[2018-09-27][18:46:01][serenity::client::bridge::gateway::shard_manager][INFO] Telling shard queuer to start shard 0
+[2018-09-27][18:46:01][serenity::client::bridge::gateway::shard_manager_monitor][DEBUG] Starting shard manager worker
+[2018-09-27][18:46:02][serenity::client::bridge::gateway::shard_runner][DEBUG] [ShardRunner [0, 1]] Running
+[2018-09-27][18:46:02][serenity::gateway::shard][DEBUG] [Shard [0, 1]] Received a Hello; interval: 41250
+[2018-09-27][18:46:02][serenity::gateway::ws_client_ext][DEBUG] [Shard [0, 1]] Identifying
+[2018-09-27][18:46:02][serenity::gateway::shard][DEBUG] [Shard [0, 1]] Received Ready
+[2018-09-27][18:46:18][hyper::net][DEBUG] http scheme
+[2018-09-27][18:46:18][hyper::net][DEBUG] https scheme
+[2018-09-27][18:46:18][hyper::http::h1][DEBUG] request line: Get "/api/v6/gateway" Http11
+[2018-09-27][18:46:18][hyper::http::h1][DEBUG] headers=Headers { Host: discordapp.com
+, User-Agent: DiscordBot (https://github.com/serenity-rs/serenity, 0.5.9)
+, Authorization: Bot NDk0OTExMzU3NTQwNjMwNTQ4.Do6Zvw.AUPEUquyULhLE5zoC6mzr8jliXc
+, Content-Type: application/json
+, }
+[2018-09-27][18:46:18][hyper::client::response][DEBUG] version=Http11, status=Ok
+[2018-09-27][18:46:18][hyper::client::response][DEBUG] headers=Headers { Date: Thu, 27 Sep 2018 23:46:18 GMT
+, Content-Type: application/json
+, Content-Length: 35
+, Connection: keep-alive
+, Set-Cookie: __cfduid=d6f6135519f0f697a6c19597b190978a11538091978; expires=Fri, 27-Sep-19 23:46:18 GMT; path=/; domain=.discordapp.com; HttpOnly
+, Strict-Transport-Security: max-age=31536000; includeSubDomains
+, Via: 1.1 google
+, Alt-Svc: clear
+, CF-Cache-Status: HIT
+, Expires: Fri, 28 Sep 2018 00:16:18 GMT
+, Cache-Control: public, max-age=1800
+, Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+, Server: cloudflare
+, CF-RAY: 4611d9513b1b1fac-DFW
+, }
+[2018-09-27][18:46:18][serenity::http::ratelimiting][DEBUG] [ratelimiting] Set the ratelimit offset to 0
+[2018-09-27][18:46:18][wellington][INFO] Listening!
+[2018-09-27][18:46:18][hyper::net][DEBUG] http scheme
+[2018-09-27][18:46:18][hyper::net][DEBUG] https scheme
+[2018-09-27][18:46:18][hyper::http::h1][DEBUG] request line: Get "/api/v6/users/@me" Http11
+[2018-09-27][18:46:18][hyper::http::h1][DEBUG] headers=Headers { Host: discordapp.com
+, User-Agent: DiscordBot (https://github.com/serenity-rs/serenity, 0.5.9)
+, Authorization: Bot NDk0OTExMzU3NTQwNjMwNTQ4.Do6Zvw.AUPEUquyULhLE5zoC6mzr8jliXc
+, Content-Type: application/json
+, }
+[2018-09-27][18:46:18][hyper::client::response][DEBUG] version=Http11, status=Ok
+[2018-09-27][18:46:18][hyper::client::response][DEBUG] headers=Headers { Date: Thu, 27 Sep 2018 23:46:18 GMT
+, Content-Type: application/json
+, Transfer-Encoding: chunked
+, Connection: keep-alive
+, Set-Cookie: __cfduid=dcc402c33580b29489dcd6e7c772e32de1538091978; expires=Fri, 27-Sep-19 23:46:18 GMT; path=/; domain=.discordapp.com; HttpOnly
+, Strict-Transport-Security: max-age=31536000; includeSubDomains
+, Via: 1.1 google
+, Alt-Svc: clear
+, Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+, Server: cloudflare
+, CF-RAY: 4611d9520f011fbe-DFW
+, }
+[2018-09-27][18:46:18][serenity::client][DEBUG] Initializing shard info: 0 - 1/1
+[2018-09-27][18:46:18][serenity::client::bridge::gateway::shard_manager][INFO] Telling shard queuer to start shard 0
+[2018-09-27][18:46:18][serenity::client::bridge::gateway::shard_manager_monitor][DEBUG] Starting shard manager worker
+[2018-09-27][18:46:18][serenity::client::bridge::gateway::shard_runner][DEBUG] [ShardRunner [0, 1]] Running
+[2018-09-27][18:46:18][serenity::gateway::shard][DEBUG] [Shard [0, 1]] Received a Hello; interval: 41250
+[2018-09-27][18:46:18][serenity::gateway::ws_client_ext][DEBUG] [Shard [0, 1]] Identifying
+[2018-09-27][18:46:19][serenity::gateway::shard][DEBUG] [Shard [0, 1]] Received Ready
+[2018-09-27][18:46:34][wellington][INFO] Listening!
+[2018-09-27][18:46:34][serenity::client::bridge::gateway::shard_manager][INFO] Telling shard queuer to start shard 0
+[2018-09-27][18:47:00][bots::handler][INFO] Got message Message { id: MessageId(495018553192218644), attachments: [], author: User { id: UserId(379009372275212290), avatar: None, bot: false, discriminator: 549, name: "JohnGalt" }, channel_id: ChannelId(494671450985201667), content: "alexa play despacito 2", edited_timestamp: None, embeds: [], guild_id: Some(GuildId(494671450985201665)), kind: Regular, member: Some(PartialMember { deaf: false, joined_at: Some(2018-09-27T00:47:44.531+00:00), mute: false, roles: [] }), mention_everyone: false, mention_roles: [], mentions: [], nonce: String("495018552902811648"), pinned: false, reactions: [], timestamp: 2018-09-27T23:47:00.081+00:00, tts: false, webhook_id: None }
+[2018-09-27][18:47:00][bots::handler][INFO] Got message Message { id: MessageId(495018554090061834), attachments: [], author: User { id: UserId(494911357540630548), avatar: Some("925809991200ca0e98da6716b8bd5cc7"), bot: true, discriminator: 5840, name: "Wellington-Test" }, channel_id: ChannelId(494671450985201667), content: "Hello, World!", edited_timestamp: None, embeds: [Embed { author: None, colour: Colour(0), description: Some("Alexa plays despacito 2"), fields: [EmbedField { inline: true, name: "Such music", value: "wow" }, EmbedField { inline: true, name: "This is so sad", value: "comming soon" }, EmbedField { inline: false, name: "Are you not entertained", value: "Despacito means slowly" }], footer: Some(EmbedFooter { icon_url: None, proxy_icon_url: None, text: "WELLS FOR THE WELL GOD!" }), image: None, kind: "rich", provider: None, thumbnail: Some(EmbedThumbnail { height: 0, proxy_url: "https://images-ext-2.discordapp.net/external/qjicp08iBPm7ACd_VquHMPCXr7gMH0mqK-spkcg2Hi0/https/i.ytimg.com/vi/4G2iAPRWMTk/maxresdefault.jpg", url: "https://i.ytimg.com/vi/4G2iAPRWMTk/maxresdefault.jpg", width: 0 }), timestamp: None, title: Some("Despacito 2"), url: Some("https://www.youtube.com/watch?v=W3GrSMYbkBE"), video: None }], guild_id: Some(GuildId(494671450985201665)), kind: Regular, member: Some(PartialMember { deaf: false, joined_at: Some(2018-09-27T16:47:55.145871+00:00), mute: false, roles: [] }), mention_everyone: false, mention_roles: [], mentions: [], nonce: Null, pinned: false, reactions: [], timestamp: 2018-09-27T23:47:00.295+00:00, tts: false, webhook_id: None }
+[2018-09-27][18:48:43][wellington][INFO] Listening!
+[2018-09-27][18:48:44][serenity::client::bridge::gateway::shard_manager][INFO] Telling shard queuer to start shard 0
+[2018-09-27][18:49:03][bots::handler][INFO] Got message Message { id: MessageId(495019069536337920), attachments: [], author: User { id: UserId(379009372275212290), avatar: None, bot: false, discriminator: 549, name: "JohnGalt" }, channel_id: ChannelId(494671450985201667), content: "alexa play despacito 2", edited_timestamp: None, embeds: [], guild_id: Some(GuildId(494671450985201665)), kind: Regular, member: Some(PartialMember { deaf: false, joined_at: Some(2018-09-27T00:47:44.531+00:00), mute: false, roles: [] }), mention_everyone: false, mention_roles: [], mentions: [], nonce: String("495019069292937216"), pinned: false, reactions: [], timestamp: 2018-09-27T23:49:03.187+00:00, tts: false, webhook_id: None }
+[2018-09-27][18:49:03][bots::handler][INFO] Got message Message { id: MessageId(495019070270210050), attachments: [], author: User { id: UserId(494911357540630548), avatar: Some("925809991200ca0e98da6716b8bd5cc7"), bot: true, discriminator: 5840, name: "Wellington-Test" }, channel_id: ChannelId(494671450985201667), content: "Hello, World!", edited_timestamp: None, embeds: [Embed { author: None, colour: Colour(0), description: Some("Alexa plays despacito 2"), fields: [EmbedField { inline: true, name: "Such music", value: "wow" }, EmbedField { inline: true, name: "This is so sad", value: "comming soon" }, EmbedField { inline: false, name: "Are you not entertained", value: "Despacito means slowly" }], footer: Some(EmbedFooter { icon_url: None, proxy_icon_url: None, text: "WELLS FOR THE WELL GOD!" }), image: None, kind: "rich", provider: None, thumbnail: Some(EmbedThumbnail { height: 0, proxy_url: "https://images-ext-2.discordapp.net/external/qjicp08iBPm7ACd_VquHMPCXr7gMH0mqK-spkcg2Hi0/https/i.ytimg.com/vi/4G2iAPRWMTk/maxresdefault.jpg", url: "https://i.ytimg.com/vi/4G2iAPRWMTk/maxresdefault.jpg", width: 0 }), timestamp: None, title: Some("Despacito 2"), url: Some("https://www.youtube.com/watch?v=W3GrSMYbkBE"), video: None }], guild_id: Some(GuildId(494671450985201665)), kind: Regular, member: Some(PartialMember { deaf: false, joined_at: Some(2018-09-27T16:47:55.145871+00:00), mute: false, roles: [] }), mention_everyone: false, mention_roles: [], mentions: [], nonce: Null, pinned: false, reactions: [], timestamp: 2018-09-27T23:49:03.362+00:00, tts: false, webhook_id: None }
+[2018-09-27][18:49:19][wellington][INFO] Listening!
+[2018-09-27][18:49:19][serenity::client::bridge::gateway::shard_manager][INFO] Telling shard queuer to start shard 0
+[2018-09-27][18:50:08][wellington][INFO] Listening!
+[2018-09-27][18:50:08][serenity::client::bridge::gateway::shard_manager][INFO] Telling shard queuer to start shard 0
+[2018-09-27][18:50:14][bots::handler][INFO] Got message Message { id: MessageId(495019369827401728), attachments: [], author: User { id: UserId(379009372275212290), avatar: None, bot: false, discriminator: 549, name: "JohnGalt" }, channel_id: ChannelId(494671450985201667), content: "alexa play despacito 2", edited_timestamp: None, embeds: [], guild_id: Some(GuildId(494671450985201665)), kind: Regular, member: Some(PartialMember { deaf: false, joined_at: Some(2018-09-27T00:47:44.531+00:00), mute: false, roles: [] }), mention_everyone: false, mention_roles: [], mentions: [], nonce: String("495019368950792192"), pinned: false, reactions: [], timestamp: 2018-09-27T23:50:14.782+00:00, tts: false, webhook_id: None }
+[2018-09-27][18:50:15][bots::handler][INFO] Got message Message { id: MessageId(495019370947280936), attachments: [], author: User { id: UserId(494911357540630548), avatar: Some("925809991200ca0e98da6716b8bd5cc7"), bot: true, discriminator: 5840, name: "Wellington-Test" }, channel_id: ChannelId(494671450985201667), content: "Well it\'s finally out", edited_timestamp: None, embeds: [Embed { author: None, colour: Colour(0), description: Some("Alexa plays despacito 2"), fields: [EmbedField { inline: true, name: "Such music", value: "wow" }, EmbedField { inline: true, name: "This is so sad", value: "comming soon" }, EmbedField { inline: false, name: "Are you not entertained", value: "Despacito means slowly" }], footer: Some(EmbedFooter { icon_url: None, proxy_icon_url: None, text: "WELLS FOR THE WELL GOD!" }), image: None, kind: "rich", provider: None, thumbnail: None, timestamp: None, title: Some("Despacito 2"), url: Some("https://www.youtube.com/watch?v=W3GrSMYbkBE"), video: None }], guild_id: Some(GuildId(494671450985201665)), kind: Regular, member: Some(PartialMember { deaf: false, joined_at: Some(2018-09-27T16:47:55.145871+00:00), mute: false, roles: [] }), mention_everyone: false, mention_roles: [], mentions: [], nonce: Null, pinned: false, reactions: [], timestamp: 2018-09-27T23:50:15.049+00:00, tts: false, webhook_id: None }
+[2018-09-27][18:50:45][wellington][INFO] Listening!
+[2018-09-27][18:50:45][serenity::client::bridge::gateway::shard_manager][INFO] Telling shard queuer to start shard 0
+[2018-09-27][18:51:09][bots::handler][INFO] Got message Message { id: MessageId(495019600015261728), attachments: [], author: User { id: UserId(379009372275212290), avatar: None, bot: false, discriminator: 549, name: "JohnGalt" }, channel_id: ChannelId(494671450985201667), content: "alexa play despacito 2", edited_timestamp: None, embeds: [], guild_id: Some(GuildId(494671450985201665)), kind: Regular, member: Some(PartialMember { deaf: false, joined_at: Some(2018-09-27T00:47:44.531+00:00), mute: false, roles: [] }), mention_everyone: false, mention_roles: [], mentions: [], nonce: String("495019600191160320"), pinned: false, reactions: [], timestamp: 2018-09-27T23:51:09.663+00:00, tts: false, webhook_id: None }
+[2018-09-27][18:51:10][bots::handler][INFO] Got message Message { id: MessageId(495019601252450304), attachments: [], author: User { id: UserId(494911357540630548), avatar: Some("925809991200ca0e98da6716b8bd5cc7"), bot: true, discriminator: 5840, name: "Wellington-Test" }, channel_id: ChannelId(494671450985201667), content: "Well it\'s finally out", edited_timestamp: None, embeds: [Embed { author: None, colour: Colour(0), description: Some("Alexa plays despacito 2"), fields: [EmbedField { inline: true, name: "This is so sad", value: "comming soon" }, EmbedField { inline: false, name: "Are you not entertained", value: "Despacito means slowly" }], footer: Some(EmbedFooter { icon_url: None, proxy_icon_url: None, text: "WELLS FOR THE WELL GOD!" }), image: None, kind: "rich", provider: None, thumbnail: Some(EmbedThumbnail { height: 0, proxy_url: "https://images-ext-1.discordapp.net/external/Q6gwjdEWtkhh9_I4WWQ3nfRded5jlVpD35spSvpxNfg/https/www.billboard.com/files/media/02-Luis-Fonsi-Despacito-ft.-Daddy-Yankee-screenshot-2017-billboard-1548.jpg", url: "https://www.billboard.com/files/media/02-Luis-Fonsi-Despacito-ft.-Daddy-Yankee-screenshot-2017-billboard-1548.jpg", width: 0 }), timestamp: None, title: Some("Despacito 2"), url: Some("https://www.youtube.com/watch?v=W3GrSMYbkBE"), video: None }], guild_id: Some(GuildId(494671450985201665)), kind: Regular, member: Some(PartialMember { deaf: false, joined_at: Some(2018-09-27T16:47:55.145871+00:00), mute: false, roles: [] }), mention_everyone: false, mention_roles: [], mentions: [], nonce: Null, pinned: false, reactions: [], timestamp: 2018-09-27T23:51:09.958+00:00, tts: false, webhook_id: None }
+[2018-09-27][18:53:09][wellington][INFO] Listening!
+[2018-09-27][18:53:10][serenity::client::bridge::gateway::shard_manager][INFO] Telling shard queuer to start shard 0
+[2018-09-27][18:53:19][bots::handler][INFO] Got message Message { id: MessageId(495020145375313920), attachments: [], author: User { id: UserId(379009372275212290), avatar: None, bot: false, discriminator: 549, name: "JohnGalt" }, channel_id: ChannelId(494671450985201667), content: "play despacito 2", edited_timestamp: None, embeds: [], guild_id: Some(GuildId(494671450985201665)), kind: Regular, member: Some(PartialMember { deaf: false, joined_at: Some(2018-09-27T00:47:44.531+00:00), mute: false, roles: [] }), mention_everyone: false, mention_roles: [], mentions: [], nonce: String("495020144817340416"), pinned: false, reactions: [], timestamp: 2018-09-27T23:53:19.687+00:00, tts: false, webhook_id: None }
+[2018-09-27][18:53:19][bots::handler][INFO] Got message Message { id: MessageId(495020146231083018), attachments: [], author: User { id: UserId(494911357540630548), avatar: Some("925809991200ca0e98da6716b8bd5cc7"), bot: true, discriminator: 5840, name: "Wellington-Test" }, channel_id: ChannelId(494671450985201667), content: "Well it\'s finally out", edited_timestamp: None, embeds: [Embed { author: None, colour: Colour(0), description: Some("Alexa plays despacito 2"), fields: [EmbedField { inline: true, name: "This is so sad", value: "comming soon" }, EmbedField { inline: false, name: "Are you not entertained", value: "Despacito means slowly" }], footer: Some(EmbedFooter { icon_url: Some("https://www.billboard.com/files/media/02-Luis-Fonsi-Despacito-ft.-Daddy-Yankee-screenshot-2017-billboard-1548.jpg"), proxy_icon_url: Some("https://images-ext-1.discordapp.net/external/Q6gwjdEWtkhh9_I4WWQ3nfRded5jlVpD35spSvpxNfg/https/www.billboard.com/files/media/02-Luis-Fonsi-Despacito-ft.-Daddy-Yankee-screenshot-2017-billboard-1548.jpg"), text: "WELLS FOR THE WELL GOD!" }), image: None, kind: "rich", provider: None, thumbnail: Some(EmbedThumbnail { height: 0, proxy_url: "https://images-ext-1.discordapp.net/external/Q6gwjdEWtkhh9_I4WWQ3nfRded5jlVpD35spSvpxNfg/https/www.billboard.com/files/media/02-Luis-Fonsi-Despacito-ft.-Daddy-Yankee-screenshot-2017-billboard-1548.jpg", url: "https://www.billboard.com/files/media/02-Luis-Fonsi-Despacito-ft.-Daddy-Yankee-screenshot-2017-billboard-1548.jpg", width: 0 }), timestamp: None, title: Some("Despacito 2"), url: Some("https://www.youtube.com/watch?v=W3GrSMYbkBE"), video: None }], guild_id: Some(GuildId(494671450985201665)), kind: Regular, member: Some(PartialMember { deaf: false, joined_at: Some(2018-09-27T16:47:55.145871+00:00), mute: false, roles: [] }), mention_everyone: false, mention_roles: [], mentions: [], nonce: Null, pinned: false, reactions: [], timestamp: 2018-09-27T23:53:19.891+00:00, tts: false, webhook_id: None }
+[2018-09-27][18:53:50][wellington][INFO] Listening!
+[2018-09-27][18:53:50][serenity::client::bridge::gateway::shard_manager][INFO] Telling shard queuer to start shard 0
+[2018-09-27][18:53:57][bots::handler][INFO] Got message Message { id: MessageId(495020305014718474), attachments: [], author: User { id: UserId(379009372275212290), avatar: None, bot: false, discriminator: 549, name: "JohnGalt" }, channel_id: ChannelId(494671450985201667), content: "play despacito 2", edited_timestamp: None, embeds: [], guild_id: Some(GuildId(494671450985201665)), kind: Regular, member: Some(PartialMember { deaf: false, joined_at: Some(2018-09-27T00:47:44.531+00:00), mute: false, roles: [] }), mention_everyone: false, mention_roles: [], mentions: [], nonce: String("495020304800677888"), pinned: false, reactions: [], timestamp: 2018-09-27T23:53:57.748+00:00, tts: false, webhook_id: None }
+[2018-09-27][18:53:58][bots::handler][INFO] Got message Message { id: MessageId(495020305581080589), attachments: [], author: User { id: UserId(494911357540630548), avatar: Some("925809991200ca0e98da6716b8bd5cc7"), bot: true, discriminator: 5840, name: "Wellington-Test" }, channel_id: ChannelId(494671450985201667), content: "Well it\'s finally out", edited_timestamp: None, embeds: [Embed { author: None, colour: Colour(0), description: Some("Alexa plays despacito 2"), fields: [EmbedField { inline: true, name: "This is so sad", value: "comming soon" }, EmbedField { inline: false, name: "Are you not entertained", value: "Despacito means slowly" }], footer: Some(EmbedFooter { icon_url: Some("https://www.billboard.com/files/media/02-Luis-Fonsi-Despacito-ft.-Daddy-Yankee-screenshot-2017-billboard-1548.jpg"), proxy_icon_url: Some("https://images-ext-1.discordapp.net/external/Q6gwjdEWtkhh9_I4WWQ3nfRded5jlVpD35spSvpxNfg/https/www.billboard.com/files/media/02-Luis-Fonsi-Despacito-ft.-Daddy-Yankee-screenshot-2017-billboard-1548.jpg"), text: "WELLS FOR THE WELL GOD!" }), image: Some(EmbedImage { height: 0, proxy_url: "https://images-ext-1.discordapp.net/external/Q6gwjdEWtkhh9_I4WWQ3nfRded5jlVpD35spSvpxNfg/https/www.billboard.com/files/media/02-Luis-Fonsi-Despacito-ft.-Daddy-Yankee-screenshot-2017-billboard-1548.jpg", url: "https://www.billboard.com/files/media/02-Luis-Fonsi-Despacito-ft.-Daddy-Yankee-screenshot-2017-billboard-1548.jpg", width: 0 }), kind: "rich", provider: None, thumbnail: None, timestamp: None, title: Some("Despacito 2"), url: Some("https://www.youtube.com/watch?v=W3GrSMYbkBE"), video: None }], guild_id: Some(GuildId(494671450985201665)), kind: Regular, member: Some(PartialMember { deaf: false, joined_at: Some(2018-09-27T16:47:55.145871+00:00), mute: false, roles: [] }), mention_everyone: false, mention_roles: [], mentions: [], nonce: Null, pinned: false, reactions: [], timestamp: 2018-09-27T23:53:57.883+00:00, tts: false, webhook_id: None }
+[2018-09-27][18:56:52][wellington][INFO] Listening!
+[2018-09-27][18:56:52][serenity::client::bridge::gateway::shard_manager][INFO] Telling shard queuer to start shard 0
+[2018-09-27][18:56:59][bots::handler][INFO] Got message Message { id: MessageId(495021068382240768), attachments: [], author: User { id: UserId(379009372275212290), avatar: None, bot: false, discriminator: 549, name: "JohnGalt" }, channel_id: ChannelId(494671450985201667), content: "play despacito 2", edited_timestamp: None, embeds: [], guild_id: Some(GuildId(494671450985201665)), kind: Regular, member: Some(PartialMember { deaf: false, joined_at: Some(2018-09-27T00:47:44.531+00:00), mute: false, roles: [] }), mention_everyone: false, mention_roles: [], mentions: [], nonce: String("495021068151422976"), pinned: false, reactions: [], timestamp: 2018-09-27T23:56:59.749+00:00, tts: false, webhook_id: None }
+[2018-09-27][18:57:00][bots::handler][INFO] Got message Message { id: MessageId(495021069338542098), attachments: [], author: User { id: UserId(494911357540630548), avatar: Some("925809991200ca0e98da6716b8bd5cc7"), bot: true, discriminator: 5840, name: "Wellington-Test" }, channel_id: ChannelId(494671450985201667), content: "Well it\'s finally out", edited_timestamp: None, embeds: [Embed { author: None, colour: Colour(0), description: Some("Alexa plays despacito 2"), fields: [EmbedField { inline: true, name: "This is so sad", value: "comming soon" }, EmbedField { inline: false, name: "Are you not entertained", value: "Despacito means slowly" }], footer: Some(EmbedFooter { icon_url: Some("https://vignette.wikia.nocookie.net/overwatch/images/6/65/Ilios_controlpoint_well.png/revision/latest?cb=20160904213011"), proxy_icon_url: Some("https://images-ext-2.discordapp.net/external/V8VvraOsSHrzDAc6C-a7t8m1n7qXD0lplNBzktnhLSQ/%3Fcb%3D20160904213011/https/vignette.wikia.nocookie.net/overwatch/images/6/65/Ilios_controlpoint_well.png/revision/latest"), text: "WELLS FOR THE WELL GOD!" }), image: Some(EmbedImage { height: 0, proxy_url: "https://images-ext-1.discordapp.net/external/Q6gwjdEWtkhh9_I4WWQ3nfRded5jlVpD35spSvpxNfg/https/www.billboard.com/files/media/02-Luis-Fonsi-Despacito-ft.-Daddy-Yankee-screenshot-2017-billboard-1548.jpg", url: "https://www.billboard.com/files/media/02-Luis-Fonsi-Despacito-ft.-Daddy-Yankee-screenshot-2017-billboard-1548.jpg", width: 0 }), kind: "rich", provider: None, thumbnail: Some(EmbedThumbnail { height: 0, proxy_url: "https://images-ext-2.discordapp.net/external/RCMT-pEOASIPHrdBtXgRK2y_iLfUzalRnddU1iRiI1A/https/i.chzbgr.com/original/5809413/h184437FB/", url: "https://i.chzbgr.com/original/5809413/h184437FB/", width: 0 }), timestamp: None, title: Some("Despacito 2"), url: Some("https://www.youtube.com/watch?v=W3GrSMYbkBE"), video: None }], guild_id: Some(GuildId(494671450985201665)), kind: Regular, member: Some(PartialMember { deaf: false, joined_at: Some(2018-09-27T16:47:55.145871+00:00), mute: false, roles: [] }), mention_everyone: false, mention_roles: [], mentions: [], nonce: Null, pinned: false, reactions: [], timestamp: 2018-09-27T23:56:59.977+00:00, tts: false, webhook_id: None }
